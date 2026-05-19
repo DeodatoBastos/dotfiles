@@ -31,6 +31,9 @@ eval "$(pyenv init - zsh)"
 
 alias ls=lsd
 alias less=bat
+alias kssh="kitten ssh"
+alias kdiff="kitten diff"
+alias icat="kitten icat"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
