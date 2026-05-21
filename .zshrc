@@ -46,3 +46,7 @@ export PATH=$PATH:/var/lib/gems/3.2.0/bin/
 
 # opencode
 export PATH=/home/deodato/.opencode/bin:$PATH
+
+play-video() {
+    mpv --profile=sw-fast --vo=kitty --vo-kitty-use-shm=yes --really-quiet "$*"
+}

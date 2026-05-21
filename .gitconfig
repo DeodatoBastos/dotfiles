@@ -46,3 +46,6 @@
     cmd = kitten diff $LOCAL $REMOTE
 [difftool "kitty.gui"]
     cmd = kitten diff $LOCAL $REMOTE
+[user]
+	email = deodatobasto@gmail.com
+	name = DeodatoBastos
