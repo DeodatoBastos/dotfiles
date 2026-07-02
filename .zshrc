@@ -75,3 +75,6 @@ export PATH=/home/deodato/.opencode/bin:$PATH
 play-video() {
     mpv --profile=sw-fast --vo=kitty --vo-kitty-use-shm=yes --really-quiet "$*"
 }
+
+alias run-media="docker compose -f ~/docker-compose.yml up -d"
+alias stop-media="docker compose -f ~/docker-compose.yml down"
