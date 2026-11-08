@@ -56,6 +56,7 @@ alias less=bat
 alias kssh="kitten ssh"
 alias kdiff="kitten diff"
 alias icat="kitten icat"
+alias upkitty="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
