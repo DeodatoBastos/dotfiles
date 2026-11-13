@@ -40,6 +40,7 @@ compinit
 # End of lines added by compinstall
 #
 export PATH=$PATH:~/.local/bin
+export PATH="$HOME/.local/bin:$HOME/.fzf/bin:$PATH"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -78,3 +79,9 @@ play-video() {
 
 alias run-media="docker compose -f ~/docker-compose.yml up -d"
 alias stop-media="docker compose -f ~/docker-compose.yml down"
+
+if command -v fzf >/dev/null 2>&1; then
+  source <(fzf --zsh)
+  bindkey -M viins '^R' fzf-history-widget
+  bindkey -M vicmd '^R' fzf-history-widget
+fi
