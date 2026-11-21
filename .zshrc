@@ -86,3 +86,5 @@ if command -v fzf >/dev/null 2>&1; then
   bindkey -M viins '^R' fzf-history-widget
   bindkey -M vicmd '^R' fzf-history-widget
 fi
+
+alias air="ai-memory run"
